@@ -1,0 +1,8 @@
+<h1><%= @episode.title %></h1>
+
+<% if @current_user.present? && @current_user.admin?%>
+  <%= link_to "Edit Episode", edit_episode_path(@episode) %>
+  <%= button_to "Delete Episode", episode_path(@episode), :method => 'delete' %>
+<% end %>
+
+<p>Introduction forthcoming...</p>

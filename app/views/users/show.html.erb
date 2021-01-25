@@ -1,0 +1,8 @@
+<h1><%= @current_user[:email] %></h1>
+<% if @current_user.episodes != nil %>
+  <ul>
+    <% @current_user.episodes.each do |ep| %>
+      <li><%= link_to ep.title, ep %></li>
+    <% end %>
+  </ul>
+<% end %>

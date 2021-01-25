@@ -1,0 +1,20 @@
+<%= form_for @episode do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :created_at %>
+  <%= f.text_field :created_at %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.label :player %>
+  <%= f.text_field :player %>
+
+  <%= f.label :introduction %>
+  <%= f.text_field :introduction %>
+
+  <%= f.submit %>
+
+<% end %>
