@@ -1,0 +1,15 @@
+<%= form_for @speaker do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :host_or_guest %>
+  <%= f.text_field :host_or_guest %>
+
+  <%= f.label :image %>
+  <%= f.url_field :image %>
+
+  <%= f.label :introduction %>
+  <%= f.text_field :introduction %>
+
+  <%= f.submit %>
+<% end %>

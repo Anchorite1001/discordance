@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -22,8 +23,10 @@
     </nav>
     <div class="dropdown">
       <%= link_to "All Episodes", episodes_path %>
+      <%= link_to "All Speakers", speakers_path %>
       <% if @current_user.present? && @current_user.admin? %>
         <%= link_to "New Episode", new_episode_path %>
+        <%= link_to "New Speaker", new_speaker_path %>
       <% end %>
     </div>
     <%= yield %>

@@ -1,0 +1,10 @@
+<h1><%= @speaker.name %></h1>
+
+<% if @current_user.present? && @current_user.admin? %>
+  <%= link_to "Edit Speaker", edit_speaker_path(@speaker) %>
+  <%= link_to "Delete Speaker", speaker_path(@speaker), :method => 'delete' %>
+<% end %>
+
+<%# image %>
+<h3><%= @speaker.host_or_guest %></h3>
+<p><%= @speaker.introduction %></p>
