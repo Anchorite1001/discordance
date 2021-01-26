@@ -15,4 +15,41 @@
  */
 body {
   background-color: #FFF9F2;
+  margin: 0 auto;
+}
+
+.vertical-nav {
+  height: 100vh;
+  width: 17rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.page {
+  width: calc(100%-17rem);
+  margin-left: 17rem
+}
+
+.vertical-nav img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.vertical-nav .nav-link {
+  margin-left: 2rem;
+  color:#0c0c0c;
+}
+
+.vertical-nav .nav-link:hover {
+  color: #595959;
+}
+
+.userbar * {
+  color: #2c3981;
+}
+
+.page form {
+  width:45%;
+  margin:0 auto;
 }
