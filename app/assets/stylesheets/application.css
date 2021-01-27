@@ -28,7 +28,8 @@ body {
 
 .page {
   width: calc(100%-17rem);
-  margin-left: 17rem
+  margin-left: 17rem;
+  padding:0 2rem;
 }
 
 .vertical-nav img {
@@ -49,7 +50,15 @@ body {
   color: #2c3981;
 }
 
-.page form {
+.real-form {
   width:45%;
   margin:0 auto;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+form h1 {
+  text-align: center;
 }

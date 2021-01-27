@@ -7,8 +7,12 @@ Rails.application.routes.draw do
   post '/login' => 'session#create'
   delete '/login' => 'session#destroy'
 
+  get '/speakers/hosts' => 'speakers#hosts', :as => 'hosts'
+  get '/speakers/guests' => 'speakers#guests', :as => 'guests'
+  get '/episodes/:id/add' => 'episodes#add', :as => 'add_episode'
+
   resources :users
   resources :episodes
-  resources :speakers
+  resources :speakers, :except => [:index]
 
 end

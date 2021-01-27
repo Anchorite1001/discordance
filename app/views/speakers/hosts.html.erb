@@ -1,0 +1,5 @@
+<h1>Hosts</h1>
+
+<% @hosts.each do |host| %>
+  <h3><%= link_to host.name, speaker_path(host) %></h3>
+<% end %>

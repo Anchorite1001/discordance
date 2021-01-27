@@ -1,6 +1,0 @@
-<h1>All Speakers</h1>
-
-<% @speakers.each do |speaker| %>
-  <%# image %>
-  <h3><%= link_to speaker.name, speaker_path(speaker) %> (<%= speaker.host_or_guest %>)</h3>
-<% end %>

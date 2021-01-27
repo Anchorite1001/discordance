@@ -35,6 +35,13 @@ class EpisodesController < ApplicationController
     redirect_to episodes_path
   end
 
+  def add
+    check_for_login
+    episode = Episode.find params[:id]
+    @current_user.episodes << episode
+    redirect_to episode_path(episode)
+  end
+
   private
   def episode_params
     params.require(:episode).permit(:title, :created_at, :image, :player, :introduction)

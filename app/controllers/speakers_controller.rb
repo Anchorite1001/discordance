@@ -1,6 +1,13 @@
 class SpeakersController < ApplicationController
-  def index
-    @speakers = Speaker.all
+  
+  def hosts
+    @hosts = Speaker.where(host_or_guest: 'Host')
+    render :hosts
+  end
+
+  def guests
+    @guests = Speaker.where(host_or_guest: 'Guest')
+    render :guests
   end
 
   def new
