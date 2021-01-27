@@ -1,5 +1,12 @@
 <h1>Guests</h1>
 
-<% @guests.each do |guest| %>
-  <h3><%= link_to guest.name, speaker_path(guest) %></h3>
-<% end %>
+<div class="card-group">
+  <% @guests.each do |guest| %>
+  <div class="card col-sm-3 shadow speaker-card">
+    <%= link_to image_tag(guest.image, :class => 'card-img-top image-thumbnail mt-2'), speaker_path(guest) %>
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to guest.name, speaker_path(guest) %></h5>
+    </div>
+  </div>
+  <% end %>
+</div>

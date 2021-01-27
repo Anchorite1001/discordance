@@ -1,12 +1,12 @@
 class SpeakersController < ApplicationController
-  
+
   def hosts
-    @hosts = Speaker.where(host_or_guest: 'Host')
+    @hosts = Speaker.where(host_or_guest: 'Host').order('name')
     render :hosts
   end
 
   def guests
-    @guests = Speaker.where(host_or_guest: 'Guest')
+    @guests = Speaker.where(host_or_guest: 'Guest').order('name')
     render :guests
   end
 

@@ -1,5 +1,12 @@
 <h1>Hosts</h1>
 
-<% @hosts.each do |host| %>
-  <h3><%= link_to host.name, speaker_path(host) %></h3>
-<% end %>
+<div class="card-group">
+  <% @hosts.each do |host| %>
+  <div class="card col-sm-3 shadow speaker-card">
+    <%= link_to image_tag(host.image, :class => 'card-img-top image-thumbnail mt-2'), speaker_path(host) %>
+    <div class="card-body">
+      <h5 class="card-title"><%= link_to host.name, speaker_path(host) %></h5>
+    </div>
+  </div>
+  <% end %>
+</div>

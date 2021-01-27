@@ -1,8 +1,15 @@
 <h1>Hello, <%= @current_user[:email] %>!</h1>
 <% if @current_user.episodes != nil %>
-  <ul>
     <% @current_user.episodes.each do |ep| %>
-      <li><%= link_to ep.title, ep %></li>
+      <div class="playlist-card">
+        <h5 class="card-header"><%= ep.title %></h5>
+        <div class="card-body">
+          <% if ep.player != nil %>
+            <%= raw ep.player %>
+          <% else %>
+            <p>Fantastic Episode Forthcoming...</p>
+          <% end %>
+        </div>
+      </div>
     <% end %>
-  </ul>
 <% end %>

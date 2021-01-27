@@ -1,8 +1,8 @@
 
 <% if flash[:error].present? %>
-  <ul>
-    <li><%= flash[:error] %></li>
-  </ul>
+<div class="alert alert-warning mt-3" role = 'alert'>
+  <h4>• <%= flash[:error] %></h4>
+</div>
 <% end %>
 
 <div class="container-sm">

@@ -12,17 +12,14 @@
   </head>
 
   <body>
-    <div class='vertical-nav bg-white'>
-      <%= link_to image_tag("logo.jpg", :class => 'mx-auto d-block pt-1 mb-3'), root_path %>
+    <div class='vertical-nav'>
+      <div class="logo">
+        <%= link_to image_tag("logo.jpg", :class => 'mx-auto d-block pt-1 mt-4 mb-4'), root_path %>
+      </div>
       <%= link_to "Home", root_path, :class => 'nav-link' %>
       <%= link_to "Episodes", episodes_path, :class => 'nav-link' %>
-      <div class="dropdown">
-        <%= link_to 'Speakers', nil, :class => 'dropdown-toggle nav-link' %>
-          <ul class = 'dropdown-menu'>
-            <li><%= link_to 'Hosts', hosts_path, :class => 'dropdown-item' %></li>
-            <li><%= link_to 'Guests', guests_path, :class => 'dropdown-item' %></li>
-          </ul>
-      </div>
+      <%= link_to 'Hosts', hosts_path, :class => 'nav-link' %>
+      <%= link_to 'Guests', guests_path, :class => 'nav-link' %>
     </div>
 
     <div class="nav justify-content-end userbar">

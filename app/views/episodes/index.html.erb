@@ -1,6 +1,11 @@
 <h1>All Episodes</h1>
-
-
-<% @episodes.each do |ep| %>
-  <h3><%= link_to ep.title, episode_path(ep.id) %></h3>
-<% end %>
+<div class="card-group">
+  <% @episodes.each do |ep| %>
+    <div class="card col-sm-3 shadow">
+      <%= link_to image_tag(ep.image, :class => 'card-img-top image-thumbnail mt-2'), episode_path(ep.id) %>
+      <div class="card-body">
+        <h5 class="card-title"><%= link_to ep.title, episode_path(ep.id) %></h5>
+      </div>
+    </div>
+  <% end %>
+</div>

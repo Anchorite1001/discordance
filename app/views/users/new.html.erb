@@ -1,11 +1,11 @@
 
 
 <% if @user.errors.any? %>
-  <ul>
+  <div class="alert alert-warning" role = 'alert'>
     <% @user.errors.full_messages.each do |msg| %>
-    <li><%= msg %></li>
+    <h4>• <%= msg %></h4>
     <% end %>
-  </ul>
+  </div>
 <% end %>
 
 <div class="container-sm">

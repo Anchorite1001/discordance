@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 body {
   background-color: #FFF9F2;
   margin: 0 auto;
@@ -32,22 +36,32 @@ body {
   padding:0 2rem;
 }
 
-.vertical-nav img {
-  width: 6rem;
-  height: 6rem;
+.logo img {
+  width: 9rem;
+  height: 9rem;
 }
 
 .vertical-nav .nav-link {
-  margin-left: 2rem;
+  font-family: 'Roboto Slab', serif;
+  margin-left: 4.5rem;
   color:#0c0c0c;
+  width:50%;
+  padding-right:0;
 }
 
 .vertical-nav .nav-link:hover {
-  color: #595959;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E %3Cpath fill='none' stroke='%23453886' stroke-width='1' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 15%;
+  border-bottom: 0;
+  text-decoration: none;
 }
 
 .userbar * {
   color: #2c3981;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.1rem;
 }
 
 .real-form {
@@ -57,8 +71,37 @@ body {
 
 h1 {
   margin: 2rem 0;
+  font-family: 'Alfa Slab One', cursive;
 }
 
 form h1 {
   text-align: center;
+}
+
+.card-group .card {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  border-color: #FFFDFB;
+  background-color: #FFFDFB;
+}
+
+.card a {
+  color:black;
+  font-family: Georgia;
+  font-weight:bold;
+}
+
+.speaker-card h5 {
+  text-align: center;
+}
+
+.alert-warning {
+  width:45%;
+  margin:0 auto;
+}
+
+.alert-warning h4 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: capitalize;
+  font-weight: bold;
 }
