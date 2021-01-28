@@ -1,4 +1,4 @@
-<h1><%= @speaker.name %></h1>
+<h1><%= @speaker.name %> (<%= @speaker.host_or_guest %>)</h1>
 
 <% if @current_user.present? && @current_user.admin? %>
   <%= link_to "Edit Speaker", edit_speaker_path(@speaker) %>

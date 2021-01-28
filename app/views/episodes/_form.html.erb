@@ -1,20 +1,17 @@
-<%= form_for @episode do |f| %>
+<%= form_for @episode, :html => {:class => 'admin-form'} do |f| %>
 
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <%= f.label :title, :class => 'form-label' %>
+  <%= f.text_field :title, :class => 'form-control' %>
 
-  <%= f.label :created_at %>
-  <%= f.text_field :created_at %>
+  <%= f.label :image, :class => 'form-label' %>
+  <%= f.text_field :image, :class => 'form-control' %>
 
-  <%= f.label :image %>
-  <%= f.text_field :image %>
+  <%= f.label :player, :class => 'form-label' %>
+  <%= f.text_field :player, :class => 'form-control' %>
 
-  <%= f.label :player %>
-  <%= f.text_field :player %>
+  <%= f.label :introduction, :class => 'form-label' %>
+  <%= f.text_area :introduction, :class => 'form-control', :rows => '6' %>
 
-  <%= f.label :introduction %>
-  <%= f.text_area :introduction %>
-
-  <%= f.submit %>
+  <%= f.submit class: 'btn btn-outline-primary mt-2' %>
 
 <% end %>

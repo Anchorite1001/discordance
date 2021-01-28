@@ -22,7 +22,7 @@
       <%= link_to 'Guests', guests_path, :class => 'nav-link' %>
     </div>
 
-    <div class="nav justify-content-end userbar">
+    <div class="nav justify-content-end userbar mb-6">
 
       <% if @current_user.present? %>
         <%= link_to "My Account", user_path(session[:user_id]), :class => 'nav-link' %>

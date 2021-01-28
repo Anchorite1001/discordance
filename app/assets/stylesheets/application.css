@@ -64,9 +64,14 @@ body {
   font-size: 1.1rem;
 }
 
-.real-form {
+.user-form {
   width:45%;
   margin:0 auto;
+}
+
+.admin-form {
+  width: 90%;
+  justify-content: left;
 }
 
 h1 {
@@ -104,4 +109,13 @@ form h1 {
   font-family: 'Oswald', sans-serif;
   text-transform: capitalize;
   font-weight: bold;
+}
+
+.episode-intro {
+  margin:auto;
+  width:75%;
+}
+
+.episode-intro p {
+  width:75%;
 }
