@@ -1,6 +1,10 @@
 # Project#1 - 离谱Discordance
 
-Take a look at [离谱Discordance](https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with Liangyu Sun. I made this application as the second individual project at software engineering immersive [GA](https://generalassemb.ly/). All comments and suggestions are welcome!
+This is an application I built for [离谱Discordance](https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with [Liangyu Sun](https://twitter.com/liangyu_s).
+
+Take a look at the application [HERE](https://discordance.herokuapp.com/). All comments and suggestions are welcome!
+
+I made this application as the second individual project at software engineering immersive [GA](https://generalassemb.ly/).
 
 ## Overview
 This is a **Ruby on rails** application of [离谱Discordance](https://discordance.herokuapp.com/), where you can:
