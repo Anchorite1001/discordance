@@ -1,21 +1,21 @@
 # Project#1 - 离谱Discordance
 
-Take a look at **[离谱Discordance]**(https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with Liangyu Sun. I made this website as the second individual project in software engineering immersive [GA](https://generalassemb.ly/). All comments and suggestions are welcome!
+Take a look at [离谱Discordance](https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with Liangyu Sun. I made this application as the second individual project at software engineering immersive [GA](https://generalassemb.ly/). All comments and suggestions are welcome!
 
 ## Overview
 This is a **Ruby on rails** application of [离谱Discordance](https://discordance.herokuapp.com/), where you can:
 * Listen to each episode
 * Read about all episode notes and introduction of each speakers
 * Signing up an account, and then
-* make your own list of liked episodes.
-This is also my first try of **[Bootstrap]**(https://getbootstrap.com/).
+* make your own list of liked episodes. <br/>
+This is also my first try of **Bootstrap**.
 
 ## Models
 There are three models in this project:
 * Users
 * Episodes
-* Speakers
-Users and Speakers both have many-to-many associations with Episodes (Each episode has several speakers, and it can also be added to different user's list).
+* Speakers <br/>
+Users and Speakers both have **many-to-many** associations with Episodes (Each episode has several speakers, and it can also be added to different user's list).
 
 ## User
 * This application uses bcrypt to build sign-up & sign-in functions for users to create and use their accounts.
@@ -26,7 +26,7 @@ Users and Speakers both have many-to-many associations with Episodes (Each episo
 * Every episode has a show page with embedded podcast player and episode notes.
 
 ## Speaker
-* Speakers are categorised as 'host' or 'guest' and are displayed separately.
+* Speakers are categorised as *'host'* or *'guest'* and are displayed separately.
 * Every speaker has a show page with a list of episodes they participated in.
 
 ## Tech Stack
