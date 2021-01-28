@@ -15,6 +15,10 @@ class UsersController < ApplicationController
   def show
   end
 
+  def welcome
+    @episode = Episode.where.not(player: nil).order('created_at').last
+  end
+
   private
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation)
