@@ -2,7 +2,7 @@
 
 Take a look at **[离谱Discordance]**(https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with Liangyu Sun. I made this website as the second individual project in software engineering immersive [GA](https://generalassemb.ly/). All comments and suggestions are welcome!
 
-##Overview
+## Overview
 This is a **Ruby on rails** application of [离谱Discordance](https://discordance.herokuapp.com/), where you can:
 * Listen to each episode
 * Read about all episode notes and introduction of each speakers
@@ -10,22 +10,22 @@ This is a **Ruby on rails** application of [离谱Discordance](https://discordan
 * make your own list of liked episodes.
 This is also my first try of **[Bootstrap]**(https://getbootstrap.com/).
 
-##Models
+## Models
 There are three models in this project:
 * Users
 * Episodes
 * Speakers
 Users and Speakers both have many-to-many associations with Episodes (Each episode has several speakers, and it can also be added to different user's list).
 
-##User
+## User
 * This application uses bcrypt to build sign-up & sign-in functions for users to create and use their accounts.
 * Each user can listen to their liked episodes directly on their account page.
 * Admin accounts can create, edit and delete each episode and speaker and make associations between them.
 
-##Episode
+## Episode
 * Every episode has a show page with embedded podcast player and episode notes.
 
-##Speaker
+## Speaker
 * Speakers are categorised as 'host' or 'guest' and are displayed separately.
 * Every speaker has a show page with a list of episodes they participated in.
 
