@@ -36,10 +36,13 @@ class EpisodesController < ApplicationController
   end
 
   def add
-    check_for_login
-    episode = Episode.find params[:id]
-    @current_user.episodes << episode
-    redirect_to user_path(@current_user)
+    if @current_user != nil
+      episode = Episode.find params[:id]
+      @current_user.episodes << episode
+      redirect_to user_path(@current_user)
+    else
+      redirect_to login_path
+    end
   end
 
   private
