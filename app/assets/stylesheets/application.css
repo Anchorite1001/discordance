@@ -111,11 +111,8 @@ form h1 {
   font-weight: bold;
 }
 
-.episode-intro {
-  margin:auto;
-  width:75%;
-}
-
-.episode-intro p {
-  width:75%;
+.player, .episode-intro {
+  width:60%;
+  margin:0 auto;
+  padding-top: 2rem;
 }

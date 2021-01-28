@@ -44,6 +44,6 @@ class EpisodesController < ApplicationController
 
   private
   def episode_params
-    params.require(:episode).permit(:title, :created_at, :image, :player, :introduction)
+    params.require(:episode).permit(:title, :created_at, :image, :player, :introduction, :speaker_ids => [])
   end
 end

@@ -7,7 +7,12 @@
   <%= f.text_field :image, :class => 'form-control' %>
 
   <%= f.label :player, :class => 'form-label' %>
-  <%= f.text_field :player, :class => 'form-control' %>
+  <%= f.text_field :player, :class => 'form-control mb-3' %>
+
+  <%= f.label :speakers, :class => 'form-label' %>
+  <%= f.collection_check_boxes :speaker_ids, Speaker.all, :id, :name %>
+
+  <br>
 
   <%= f.label :introduction, :class => 'form-label' %>
   <%= f.text_area :introduction, :class => 'form-control', :rows => '6' %>
