@@ -1,24 +1,8 @@
-# README
+# Project#1 - 离谱Discordance
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Take a look at [离谱Discordance](https://discordance.herokuapp.com/) -- a Mandarin podcast I am cohosting with Liangyu Sun. I made this website as the second individual project in software engineering immersive [GA](https://generalassemb.ly/).
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Tech Stack
+* Ruby on rails, PostgreSQL
+* Bootstrap, HTML, CSS
+* Heroku, bcrypt
