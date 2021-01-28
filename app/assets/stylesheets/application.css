@@ -43,10 +43,16 @@ body {
 
 .vertical-nav .nav-link {
   font-family: 'Roboto Slab', serif;
+  font-size: 1.3rem;
   margin-left: 4.5rem;
   color:#0c0c0c;
   width:50%;
   padding-right:0;
+}
+
+.vertical-nav .subscribe {
+  margin-top:3rem;
+  margin-left: 3rem;
 }
 
 .vertical-nav .nav-link:hover {

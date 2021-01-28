@@ -39,7 +39,7 @@ class EpisodesController < ApplicationController
     check_for_login
     episode = Episode.find params[:id]
     @current_user.episodes << episode
-    redirect_to episode_path(episode)
+    redirect_to user_path(@current_user)
   end
 
   private
