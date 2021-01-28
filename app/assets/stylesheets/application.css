@@ -96,7 +96,7 @@ form h1 {
   background-color: #FFFDFB;
 }
 
-.card a {
+.card a, .talked-episodes a {
   color:black;
   font-family: Georgia;
   font-weight:bold;
@@ -117,8 +117,13 @@ form h1 {
   font-weight: bold;
 }
 
-.player, .episode-intro {
+.player, .episode-intro, .speaker-intro {
   width:60%;
   margin:0 auto;
   padding-top: 2rem;
+}
+
+.talked-episodes {
+  width:40%;
+  margin:0 auto;
 }

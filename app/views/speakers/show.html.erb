@@ -1,10 +1,28 @@
-<h1><%= @speaker.name %> (<%= @speaker.host_or_guest %>)</h1>
+<div class="speaker-show text-center">
+  <h1><%= @speaker.name %> (<%= @speaker.host_or_guest %>)</h1>
 
-<% if @current_user.present? && @current_user.admin? %>
-  <%= link_to "Edit Speaker", edit_speaker_path(@speaker) %>
-  <%= link_to "Delete Speaker", speaker_path(@speaker), :method => 'delete' %>
-<% end %>
+  <% if @current_user.present? && @current_user.admin? %>
+    <div class="btn-group mt-3 mb-3">
+      <%= link_to "Edit Speaker", edit_speaker_path(@speaker), :class => 'btn btn-info mr-2' %>
+      <%= button_to "Delete Speaker", speaker_path(@speaker), :method => 'delete', :class => 'btn btn-danger' %>
+    </div>
+  <% end %>
 
-<%# image %>
-<h3><%= @speaker.host_or_guest %></h3>
-<p><%= @speaker.introduction %></p>
+
+  <%= image_tag @speaker.image, :class => 'col-sm-4 d-block mx-auto' %>
+</div>
+
+    <ul class="list-group mt-3 talked-episodes text-center">
+      <% @speaker.episodes.each do |ep| %>
+        <li class="list-group-item">
+          <%= link_to ep.title, episode_path(ep) %>
+        </li>
+      <% end %>
+    </ul>
+
+
+  <% if @speaker.introduction != nil %>
+    <div class="speaker-intro">
+    <%= simple_format(@speaker.introduction) %>
+    </div>
+  <% end %>

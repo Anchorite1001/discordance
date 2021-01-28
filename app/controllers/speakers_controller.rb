@@ -39,7 +39,7 @@ class SpeakersController < ApplicationController
     check_for_admin
     speaker = Speaker.find params[:id]
     speaker.destroy
-    redirect_to speakers_path
+    redirect_to hosts_path
   end
 
   private
