@@ -42,6 +42,11 @@ Users and Speakers both have **many-to-many** associations with Episodes (Each e
 * Bootstrap, HTML, CSS
 * Heroku, bcrypt
 
+## Next Steps
+* Responsive design
+* Let user be able to delete episode from their list
+* Add comment function
+
 ## Acknowledgements
 * I used several beautiful fonts from [Google fonts](https://fonts.google.com/).
 * I used Podcast badges from [Apple Podcast](https://podcasts.apple.com/us/podcast/%E7%A6%BB%E8%B0%B1-discordance/id1549194238?itsct=podcast_box&itscg=30200) and [Spotify](https://open.spotify.com/show/1o9u0Z5WR7IxaCFofb547k).
