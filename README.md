@@ -7,8 +7,8 @@ Take a look at the application [HERE](https://discordance.herokuapp.com/). All c
 ## Overview
 This is a **Ruby on rails** application of [离谱Discordance](https://discordance.herokuapp.com/), where you can:
 * Listen to each episode
-* Read about all episode notes and introduction of each speakers
-* Signing up an account, and then
+* Read all episode notes and introduction of each speaker
+* Sign up an account, and then
 * make your own list of liked episodes.
 
 <!-- end of the list -->
